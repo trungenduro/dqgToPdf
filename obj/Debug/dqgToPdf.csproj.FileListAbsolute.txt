@@ -1,0 +1,11 @@
+C:\Users\tomato\Documents\Naviswork\dqgToPdf\obj\Debug\dqgToPdf.csprojAssemblyReference.cache
+C:\Users\tomato\Documents\Naviswork\dqgToPdf\obj\Debug\dqgToPdf.csproj.CoreCompileInputs.cache
+C:\Users\tomato\Documents\Naviswork\dqgToPdf\bin\Debug\dqgToPdf.dll
+C:\Users\tomato\Documents\Naviswork\dqgToPdf\bin\Debug\dqgToPdf.pdb
+C:\Users\tomato\Documents\Naviswork\dqgToPdf\bin\Debug\ShxVectorlize.dll
+C:\Users\tomato\Documents\Naviswork\dqgToPdf\bin\Debug\ThoughtWorks.QRCode.dll
+C:\Users\tomato\Documents\Naviswork\dqgToPdf\obj\Debug\dqgToPdf.csproj.CopyComplete
+C:\Users\tomato\Documents\Naviswork\dqgToPdf\obj\Debug\dqgToPdf.dll
+C:\Users\tomato\Documents\Naviswork\dqgToPdf\obj\Debug\dqgToPdf.pdb
+C:\Users\tomato\source\repos\PDFlink\PDFlink\bin\Debug\dqgToPdf.dll
+C:\Users\tomato\source\repos\PDFlink\PDFlink\bin\Debug\dqgToPdf.pdb

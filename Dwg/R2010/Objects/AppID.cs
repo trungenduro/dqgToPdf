@@ -1,0 +1,49 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: dqgToPdf.Dwg.R2010.Objects.AppID
+// Assembly: dqgToPdf, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 62F9A02F-9825-49FD-9C39-99200611E8E8
+// Assembly location: Z:\0_TRUNG\ToDHF20200809\PDFJump\PDFJump200808\dqgToPdf.dll
+
+using dwgToPdfTest.Dwg;
+using System;
+
+namespace dqgToPdf.Dwg.R2010.Objects
+{
+  public class AppID : CommonNonEntityData
+  {
+    public AppID(DwgBitArray ba)
+      : base(ba)
+    {
+      this.LoadAppID(ba);
+    }
+
+    public int XrefIndexPlus1 { get; set; }
+
+    public int Unknown { get; set; }
+
+    public string EntryName { get; set; }
+
+    public HandleReference AppControlHandle { get; set; }
+
+    public HandleReference ExternalReferenceBlockHandle { get; set; }
+
+    private void LoadAppID(DwgBitArray ba)
+    {
+      this.XrefIndexPlus1 = (int) ba.ReadBS();
+      Console.WriteLine(string.Format("XrefIndexPlus1: {0}", (object) this.XrefIndexPlus1));
+      this.Unknown = (int) ba.ReadByte();
+      Console.WriteLine(string.Format("Unknown: {0}", (object) this.Unknown));
+      this.EntryName = ba.ReadTU();
+      Console.WriteLine("EntryName: " + this.EntryName);
+      ba.bitindex += 17;
+      this.AppControlHandle = ba.ReadH();
+      Console.WriteLine(string.Format("AppControlHandle: {0}", (object) this.AppControlHandle));
+      this.LoadReactors(ba);
+      this.LoadXdicHandle(ba);
+      this.ExternalReferenceBlockHandle = ba.ReadH();
+      Console.WriteLine(string.Format("ExternalReferenceBlockHandle: {0}", (object) this.ExternalReferenceBlockHandle));
+      Console.WriteLine(string.Format("Remainbits: {0}", (object) ba.Residual));
+      Console.WriteLine();
+    }
+  }
+}
