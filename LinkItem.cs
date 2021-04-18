@@ -13,5 +13,7 @@ namespace dqgToPdf
     public string Target { get; set; }
 
     public string Text { get; set; }
+
+        public string TrungText { get; set; }
   }
 }
