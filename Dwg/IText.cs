@@ -13,5 +13,7 @@ namespace dqgToPdf.Dwg
     string TextValue { get; set; }
 
     string LinkTargetPath { get; set; }
+
+         string trungtest { get; set; }
   }
 }
